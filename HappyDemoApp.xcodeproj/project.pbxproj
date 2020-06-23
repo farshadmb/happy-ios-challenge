@@ -155,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				F88AB44424A212C70030911C /* AppDelegation */,
+				F88AB44524A2159A0030911C /* Presentation */,
+				F88AB44624A215C50030911C /* Domain */,
+				F88AB44724A215ED0030911C /* infrastructure - Data */,
 			);
 			path = AppStructure;
 			sourceTree = "<group>";
@@ -185,6 +188,91 @@
 				F88AB43524A2127C0030911C /* SceneDelegate.swift */,
 			);
 			path = AppDelegation;
+			sourceTree = "<group>";
+		};
+		F88AB44524A2159A0030911C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB44924A219FB0030911C /* View Models */,
+				F88AB44824A219EF0030911C /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F88AB44624A215C50030911C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB44E24A21F6C0030911C /* Interfaces */,
+				F88AB44D24A21F360030911C /* UseCases */,
+				F88AB44A24A21A020030911C /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F88AB44724A215ED0030911C /* infrastructure - Data */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB44F24A21FE00030911C /* Repository */,
+				F88AB44C24A21A230030911C /* Database */,
+				F88AB44B24A21A160030911C /* Networking */,
+			);
+			path = "infrastructure - Data";
+			sourceTree = "<group>";
+		};
+		F88AB44824A219EF0030911C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F88AB44924A219FB0030911C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F88AB44A24A21A020030911C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F88AB44B24A21A160030911C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F88AB44C24A21A230030911C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F88AB44D24A21F360030911C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F88AB44E24A21F6C0030911C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F88AB44F24A21FE00030911C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		FE9A4A25969A1324FE31D5A0 /* Frameworks */ = {
