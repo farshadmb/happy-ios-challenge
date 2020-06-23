@@ -21,10 +21,11 @@ PODS:
   - GoogleMaps/Base (3.9.0)
   - GoogleMaps/Maps (3.9.0):
     - GoogleMaps/Base
-  - Moya (14.0.0):
-    - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - Realm (5.1.0):
     - Realm/Headers (= 5.1.0)
   - Realm/Headers (5.1.0)
@@ -38,7 +39,7 @@ PODS:
 DEPENDENCIES:
   - Google-Maps-iOS-Utils
   - GoogleMaps
-  - Moya
+  - Moya/RxSwift
   - Realm
   - RxAlamofire
   - RxSwift
@@ -62,6 +63,6 @@ SPEC CHECKSUMS:
   RxAlamofire: 22287c710761466d0123504c566a8381520d4d63
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 9f564e38d0d331d51ef70b63de26873c206e0272
+PODFILE CHECKSUM: 06a6a6b2165bb1bdd797f7bf882790dd3ac45cb2
 
 COCOAPODS: 1.9.3
