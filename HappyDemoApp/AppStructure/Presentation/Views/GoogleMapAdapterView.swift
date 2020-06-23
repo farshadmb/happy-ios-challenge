@@ -23,8 +23,8 @@ struct GoogleMapAdapterView: UIViewRepresentable {
     
     private let manager : GMUClusterManager
     
-    private weak var delegate: GMUClusterManagerDelegateWrapper?
-    
+    private weak var clusterDelegate: GMUClusterManagerDelegateWrapper?
+    private weak var mapDelegate: GMSMapViewDelegateWrapper?
     
     init(handler: @escaping(GMUClusterItem) -> () = { _ in }) {
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: GoogleMapAdapterView.defaultCamera)
@@ -32,11 +32,17 @@ struct GoogleMapAdapterView: UIViewRepresentable {
         self.mapView = mapView
         self.manager = GoogleMapClusteringFactory.createGridCluster(for: mapView)
         
-        self.delegate = GMUClusterManagerDelegateWrapper(itemHandler: handler, clusterHadler: { (cluster) in
+        let clusterDelegateWrapper = GMUClusterManagerDelegateWrapper(itemHandler: handler, clusterHadler: { (cluster) in
             
         })
         
-        self.manager.setDelegate(self.delegate, mapDelegate: nil)
+        let mapDelegateWrapper = GMSMapViewDelegateWrapper()
+        
+        self.clusterDelegate = clusterDelegateWrapper
+        self.mapDelegate = mapDelegateWrapper
+        
+        self.manager.setDelegate(clusterDelegateWrapper, mapDelegate: mapDelegateWrapper)
+        
     }
     
     /// Creates a `UIView` instance to be presented.
@@ -52,10 +58,11 @@ struct GoogleMapAdapterView: UIViewRepresentable {
     }
     
     
-    func update(items: Binding<[ClusterItem]>) -> some View {
+    func update(items: [ClusterItem]) -> some View {
         // Creates a marker in the center of the map.
         self.manager.clearItems()
-        self.manager.add(items.wrappedValue)
+        guard items.isEmpty == false else { return self}
+        self.manager.add(items)
         self.manager.cluster()
         return self
     }

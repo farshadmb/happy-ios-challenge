@@ -11,18 +11,18 @@ import RxSwift
 
 protocol UseCaseRequestValue {
     
-    associatedtype UseCaseValueType
-    
 }
 
 protocol UseCaseResponse {
-    associatedtype ResultType
     
-    typealias Response = Result<ResultType,Error>
 }
 
+typealias UseCaseResult<T: UseCaseRequestValue> = Result<T,Error>
 
 protocol UseCase {
     
-    func execute<Value: UseCaseRequestValue,Response:UseCaseResponse>(request: Value) -> Observable<Response.Response>
+    typealias RequestType = UseCaseRequestValue
+    typealias ResponseType = UseCaseResponse
+    
+    func execute<T: ResponseType>(requestValue: RequestType) -> Observable<UseCaseResult<T>>
 }

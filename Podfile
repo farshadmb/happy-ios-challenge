@@ -8,8 +8,10 @@ target 'HappyDemoApp' do
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
   
-  pod 'Moya'
+  pod 'Moya/RxSwift'
   pod 'Realm'
+  
+  pod 'PureLayout'
   
   pod 'RxSwift'
   pod 'RxAlamofire'

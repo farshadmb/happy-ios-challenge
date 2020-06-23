@@ -30,6 +30,23 @@
 		F88AB47324A24ACD0030911C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB47224A24ACD0030911C /* BottomSheetView.swift */; };
 		F8C1C90024A25DEE003F945A /* GoogleMapViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */; };
 		F8C1C90224A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */; };
+		F8C1C90524A268C9003F945A /* MapBikeStationRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90424A268C9003F945A /* MapBikeStationRepositoryInterface.swift */; };
+		F8C1C90724A2692B003F945A /* MapBikeStationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90624A2692B003F945A /* MapBikeStationUseCase.swift */; };
+		F8C1C90924A26A94003F945A /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90824A26A93003F945A /* UseCase.swift */; };
+		F8C1C90B24A27B27003F945A /* MapBikeStationUseCaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90A24A27B27003F945A /* MapBikeStationUseCaseHandler.swift */; };
+		F8C1C90D24A27BE1003F945A /* MapLocationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90C24A27BE1003F945A /* MapLocationEntity.swift */; };
+		F8C1C90F24A27C35003F945A /* LocationCordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90E24A27C35003F945A /* LocationCordinate.swift */; };
+		F8C1C91124A27C69003F945A /* LocationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91024A27C69003F945A /* LocationAddress.swift */; };
+		F8C1C91324A27D9B003F945A /* BikeStationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91224A27D9B003F945A /* BikeStationEntity.swift */; };
+		F8C1C91624A2817A003F945A /* BikeStationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91524A2817A003F945A /* BikeStationRepository.swift */; };
+		F8C1C91824A28209003F945A /* BikeStationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91724A28209003F945A /* BikeStationTarget.swift */; };
+		F8C1C91A24A2877B003F945A /* BikeStationRepositoryTestes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91924A2877B003F945A /* BikeStationRepositoryTestes.swift */; };
+		F8C1C91C24A2904A003F945A /* StationListMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91B24A2904A003F945A /* StationListMapViewModel.swift */; };
+		F8C1C91E24A29064003F945A /* BikeStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91D24A29064003F945A /* BikeStationViewModel.swift */; };
+		F8C1C92224A2966E003F945A /* GMUClusterMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92124A2966E003F945A /* GMUClusterMappable.swift */; };
+		F8C1C92424A29946003F945A /* GMSMapViewDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92324A29946003F945A /* GMSMapViewDelegateWrapper.swift */; };
+		F8C1C92624A29ADA003F945A /* AnyGMUClusterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92524A29ADA003F945A /* AnyGMUClusterItem.swift */; };
+		F8C1C92824A2A3D7003F945A /* AnnotationIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92724A2A3D7003F945A /* AnnotationIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +102,23 @@
 		F88AB47224A24ACD0030911C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewFactory.swift; sourceTree = "<group>"; };
 		F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMUClusterManagerDelegateWrapper.swift; sourceTree = "<group>"; };
+		F8C1C90424A268C9003F945A /* MapBikeStationRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBikeStationRepositoryInterface.swift; sourceTree = "<group>"; };
+		F8C1C90624A2692B003F945A /* MapBikeStationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBikeStationUseCase.swift; sourceTree = "<group>"; };
+		F8C1C90824A26A93003F945A /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		F8C1C90A24A27B27003F945A /* MapBikeStationUseCaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBikeStationUseCaseHandler.swift; sourceTree = "<group>"; };
+		F8C1C90C24A27BE1003F945A /* MapLocationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationEntity.swift; sourceTree = "<group>"; };
+		F8C1C90E24A27C35003F945A /* LocationCordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCordinate.swift; sourceTree = "<group>"; };
+		F8C1C91024A27C69003F945A /* LocationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAddress.swift; sourceTree = "<group>"; };
+		F8C1C91224A27D9B003F945A /* BikeStationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationEntity.swift; sourceTree = "<group>"; };
+		F8C1C91524A2817A003F945A /* BikeStationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationRepository.swift; sourceTree = "<group>"; };
+		F8C1C91724A28209003F945A /* BikeStationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationTarget.swift; sourceTree = "<group>"; };
+		F8C1C91924A2877B003F945A /* BikeStationRepositoryTestes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationRepositoryTestes.swift; sourceTree = "<group>"; };
+		F8C1C91B24A2904A003F945A /* StationListMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListMapViewModel.swift; sourceTree = "<group>"; };
+		F8C1C91D24A29064003F945A /* BikeStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationViewModel.swift; sourceTree = "<group>"; };
+		F8C1C92124A2966E003F945A /* GMUClusterMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMUClusterMappable.swift; sourceTree = "<group>"; };
+		F8C1C92324A29946003F945A /* GMSMapViewDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewDelegateWrapper.swift; sourceTree = "<group>"; };
+		F8C1C92524A29ADA003F945A /* AnyGMUClusterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyGMUClusterItem.swift; sourceTree = "<group>"; };
+		F8C1C92724A2A3D7003F945A /* AnnotationIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +198,7 @@
 			children = (
 				F88AB41924A20C830030911C /* HappyDemoAppTests.swift */,
 				F88AB41B24A20C830030911C /* Info.plist */,
+				F8C1C91924A2877B003F945A /* BikeStationRepositoryTestes.swift */,
 			);
 			path = HappyDemoAppTests;
 			sourceTree = "<group>";
@@ -255,6 +290,7 @@
 				F88AB46924A23CBF0030911C /* StationMapView.swift */,
 				F88AB46B24A23CD30030911C /* GoogleMapAdapterView.swift */,
 				F88AB47224A24ACD0030911C /* BottomSheetView.swift */,
+				F8C1C92724A2A3D7003F945A /* AnnotationIconView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +298,8 @@
 		F88AB44924A219FB0030911C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C91B24A2904A003F945A /* StationListMapViewModel.swift */,
+				F8C1C91D24A29064003F945A /* BikeStationViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -269,6 +307,8 @@
 		F88AB44A24A21A020030911C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C90C24A27BE1003F945A /* MapLocationEntity.swift */,
+				F8C1C91224A27D9B003F945A /* BikeStationEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -276,6 +316,7 @@
 		F88AB44B24A21A160030911C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C91724A28209003F945A /* BikeStationTarget.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -290,6 +331,7 @@
 		F88AB44D24A21F360030911C /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C90A24A27B27003F945A /* MapBikeStationUseCaseHandler.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -297,6 +339,7 @@
 		F88AB44E24A21F6C0030911C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C90324A267BB003F945A /* Repository */,
 				F88AB46324A234A40030911C /* Entity */,
 				F88AB46224A2349C0030911C /* UseCase */,
 			);
@@ -306,6 +349,7 @@
 		F88AB44F24A21FE00030911C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C91524A2817A003F945A /* BikeStationRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -323,6 +367,8 @@
 		F88AB46224A2349C0030911C /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C90824A26A93003F945A /* UseCase.swift */,
+				F8C1C90624A2692B003F945A /* MapBikeStationUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -330,6 +376,8 @@
 		F88AB46324A234A40030911C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C90E24A27C35003F945A /* LocationCordinate.swift */,
+				F8C1C91024A27C69003F945A /* LocationAddress.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -374,8 +422,19 @@
 			children = (
 				F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */,
 				F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */,
+				F8C1C92524A29ADA003F945A /* AnyGMUClusterItem.swift */,
+				F8C1C92124A2966E003F945A /* GMUClusterMappable.swift */,
+				F8C1C92324A29946003F945A /* GMSMapViewDelegateWrapper.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8C1C90324A267BB003F945A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1C90424A268C9003F945A /* MapBikeStationRepositoryInterface.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		FE9A4A25969A1324FE31D5A0 /* Frameworks */ = {
@@ -666,16 +725,32 @@
 				F88AB46A24A23CBF0030911C /* StationMapView.swift in Sources */,
 				F88AB45E24A2320C0030911C /* DatabaseRepository.swift in Sources */,
 				F8C1C90224A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift in Sources */,
+				F8C1C90B24A27B27003F945A /* MapBikeStationUseCaseHandler.swift in Sources */,
+				F8C1C92824A2A3D7003F945A /* AnnotationIconView.swift in Sources */,
+				F8C1C92624A29ADA003F945A /* AnyGMUClusterItem.swift in Sources */,
+				F8C1C92224A2966E003F945A /* GMUClusterMappable.swift in Sources */,
 				F88AB43D24A2127C0030911C /* AppDelegate.swift in Sources */,
+				F8C1C90524A268C9003F945A /* MapBikeStationRepositoryInterface.swift in Sources */,
+				F8C1C91C24A2904A003F945A /* StationListMapViewModel.swift in Sources */,
 				F88AB45824A22F330030911C /* Storable.swift in Sources */,
+				F8C1C91324A27D9B003F945A /* BikeStationEntity.swift in Sources */,
 				F88AB47124A241FE0030911C /* AppRootView.swift in Sources */,
+				F8C1C91124A27C69003F945A /* LocationAddress.swift in Sources */,
 				F88AB45124A220A00030911C /* NetworkService.swift in Sources */,
+				F8C1C91624A2817A003F945A /* BikeStationRepository.swift in Sources */,
+				F8C1C91E24A29064003F945A /* BikeStationViewModel.swift in Sources */,
 				F88AB46F24A2419A0030911C /* AppConfiguration.swift in Sources */,
 				F8C1C90024A25DEE003F945A /* GoogleMapViewFactory.swift in Sources */,
 				F88AB43F24A2127C0030911C /* SceneDelegate.swift in Sources */,
+				F8C1C92424A29946003F945A /* GMSMapViewDelegateWrapper.swift in Sources */,
 				F88AB47324A24ACD0030911C /* BottomSheetView.swift in Sources */,
+				F8C1C90F24A27C35003F945A /* LocationCordinate.swift in Sources */,
+				F8C1C90724A2692B003F945A /* MapBikeStationUseCase.swift in Sources */,
+				F8C1C91824A28209003F945A /* BikeStationTarget.swift in Sources */,
+				F8C1C90D24A27BE1003F945A /* MapLocationEntity.swift in Sources */,
 				F88AB46C24A23CD30030911C /* GoogleMapAdapterView.swift in Sources */,
 				F88AB45624A22BDE0030911C /* NetworkMappert.swift in Sources */,
+				F8C1C90924A26A94003F945A /* UseCase.swift in Sources */,
 				F88AB45A24A22F4A0030911C /* Storage.swift in Sources */,
 				F88AB45C24A230580030911C /* WebRepository.swift in Sources */,
 			);
@@ -686,6 +761,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88AB41A24A20C830030911C /* HappyDemoAppTests.swift in Sources */,
+				F8C1C91A24A2877B003F945A /* BikeStationRepositoryTestes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

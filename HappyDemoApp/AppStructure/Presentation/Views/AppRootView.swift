@@ -16,7 +16,7 @@ struct AppRootView: View {
     
     var body: some View {
         GeometryReader { proxy in
-            StationMapView()
+            StationMapView(viewModel: StationListMapViewModel(useCase: MapBikeStationUseCaseHandler(repository: DefaultBikeStationRespository.default)))
                 .frame(maxHeight:proxy.size.height * 0.9, alignment: .topLeading)
             BottomSheetView(
                 isOpen: self.$isBottomSheetPresent,

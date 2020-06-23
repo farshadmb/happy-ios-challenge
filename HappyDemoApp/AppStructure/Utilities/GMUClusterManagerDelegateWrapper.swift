@@ -8,6 +8,7 @@
 
 import Foundation
 import GoogleMapsUtils
+import GoogleMaps
 
 @objc
 class GMUClusterManagerDelegateWrapper: NSObject, GMUClusterManagerDelegate {
