@@ -23,6 +23,13 @@
 		F88AB45A24A22F4A0030911C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45924A22F4A0030911C /* Storage.swift */; };
 		F88AB45C24A230580030911C /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45B24A230580030911C /* WebRepository.swift */; };
 		F88AB45E24A2320C0030911C /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45D24A2320C0030911C /* DatabaseRepository.swift */; };
+		F88AB46A24A23CBF0030911C /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB46924A23CBF0030911C /* StationMapView.swift */; };
+		F88AB46C24A23CD30030911C /* GoogleMapAdapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB46B24A23CD30030911C /* GoogleMapAdapterView.swift */; };
+		F88AB46F24A2419A0030911C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB46E24A2419A0030911C /* AppConfiguration.swift */; };
+		F88AB47124A241FE0030911C /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB47024A241FE0030911C /* AppRootView.swift */; };
+		F88AB47324A24ACD0030911C /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB47224A24ACD0030911C /* BottomSheetView.swift */; };
+		F8C1C90024A25DEE003F945A /* GoogleMapViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */; };
+		F8C1C90224A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		F88AB45924A22F4A0030911C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		F88AB45B24A230580030911C /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
 		F88AB45D24A2320C0030911C /* DatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepository.swift; sourceTree = "<group>"; };
+		F88AB46924A23CBF0030911C /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
+		F88AB46B24A23CD30030911C /* GoogleMapAdapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapAdapterView.swift; sourceTree = "<group>"; };
+		F88AB46E24A2419A0030911C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		F88AB47024A241FE0030911C /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		F88AB47224A24ACD0030911C /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewFactory.swift; sourceTree = "<group>"; };
+		F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMUClusterManagerDelegateWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +180,8 @@
 		F88AB43224A2127C0030911C /* AppStructure */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C8FE24A25D61003F945A /* Utilities */,
+				F88AB46D24A2418E0030911C /* Constants */,
 				F88AB44424A212C70030911C /* AppDelegation */,
 				F88AB44524A2159A0030911C /* Presentation */,
 				F88AB44624A215C50030911C /* Domain */,
@@ -235,6 +251,10 @@
 		F88AB44824A219EF0030911C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F88AB47024A241FE0030911C /* AppRootView.swift */,
+				F88AB46924A23CBF0030911C /* StationMapView.swift */,
+				F88AB46B24A23CD30030911C /* GoogleMapAdapterView.swift */,
+				F88AB47224A24ACD0030911C /* BottomSheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +359,23 @@
 				F88AB45524A22BDE0030911C /* NetworkMappert.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F88AB46D24A2418E0030911C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB46E24A2419A0030911C /* AppConfiguration.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F8C1C8FE24A25D61003F945A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */,
+				F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		FE9A4A25969A1324FE31D5A0 /* Frameworks */ = {
@@ -626,11 +663,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88AB46A24A23CBF0030911C /* StationMapView.swift in Sources */,
 				F88AB45E24A2320C0030911C /* DatabaseRepository.swift in Sources */,
+				F8C1C90224A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift in Sources */,
 				F88AB43D24A2127C0030911C /* AppDelegate.swift in Sources */,
 				F88AB45824A22F330030911C /* Storable.swift in Sources */,
+				F88AB47124A241FE0030911C /* AppRootView.swift in Sources */,
 				F88AB45124A220A00030911C /* NetworkService.swift in Sources */,
+				F88AB46F24A2419A0030911C /* AppConfiguration.swift in Sources */,
+				F8C1C90024A25DEE003F945A /* GoogleMapViewFactory.swift in Sources */,
 				F88AB43F24A2127C0030911C /* SceneDelegate.swift in Sources */,
+				F88AB47324A24ACD0030911C /* BottomSheetView.swift in Sources */,
+				F88AB46C24A23CD30030911C /* GoogleMapAdapterView.swift in Sources */,
 				F88AB45624A22BDE0030911C /* NetworkMappert.swift in Sources */,
 				F88AB45A24A22F4A0030911C /* Storage.swift in Sources */,
 				F88AB45C24A230580030911C /* WebRepository.swift in Sources */,
