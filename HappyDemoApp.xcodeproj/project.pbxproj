@@ -17,6 +17,12 @@
 		F88AB44024A2127C0030911C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43724A2127C0030911C /* Assets.xcassets */; };
 		F88AB44124A2127C0030911C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43824A2127C0030911C /* LaunchScreen.storyboard */; };
 		F88AB44324A2127C0030911C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43C24A2127C0030911C /* Preview Assets.xcassets */; };
+		F88AB45124A220A00030911C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45024A220A00030911C /* NetworkService.swift */; };
+		F88AB45624A22BDE0030911C /* NetworkMappert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45524A22BDE0030911C /* NetworkMappert.swift */; };
+		F88AB45824A22F330030911C /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45724A22F330030911C /* Storable.swift */; };
+		F88AB45A24A22F4A0030911C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45924A22F4A0030911C /* Storage.swift */; };
+		F88AB45C24A230580030911C /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45B24A230580030911C /* WebRepository.swift */; };
+		F88AB45E24A2320C0030911C /* DatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB45D24A2320C0030911C /* DatabaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		F88AB43924A2127C0030911C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F88AB43A24A2127C0030911C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88AB43C24A2127C0030911C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F88AB45024A220A00030911C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F88AB45524A22BDE0030911C /* NetworkMappert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMappert.swift; sourceTree = "<group>"; };
+		F88AB45724A22F330030911C /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		F88AB45924A22F4A0030911C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F88AB45B24A230580030911C /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
+		F88AB45D24A2320C0030911C /* DatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				F88AB44424A212C70030911C /* AppDelegation */,
+				F88AB44524A2159A0030911C /* Presentation */,
+				F88AB44624A215C50030911C /* Domain */,
+				F88AB44724A215ED0030911C /* infrastructure - Data */,
 			);
 			path = AppStructure;
 			sourceTree = "<group>";
@@ -185,6 +200,145 @@
 				F88AB43524A2127C0030911C /* SceneDelegate.swift */,
 			);
 			path = AppDelegation;
+			sourceTree = "<group>";
+		};
+		F88AB44524A2159A0030911C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB44924A219FB0030911C /* View Models */,
+				F88AB44824A219EF0030911C /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F88AB44624A215C50030911C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB44E24A21F6C0030911C /* Interfaces */,
+				F88AB44D24A21F360030911C /* UseCases */,
+				F88AB44A24A21A020030911C /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F88AB44724A215ED0030911C /* infrastructure - Data */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB45F24A232AC0030911C /* Interfaces */,
+				F88AB44F24A21FE00030911C /* Repository */,
+				F88AB44C24A21A230030911C /* Database */,
+				F88AB44B24A21A160030911C /* Networking */,
+			);
+			path = "infrastructure - Data";
+			sourceTree = "<group>";
+		};
+		F88AB44824A219EF0030911C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F88AB44924A219FB0030911C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F88AB44A24A21A020030911C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F88AB44B24A21A160030911C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F88AB44C24A21A230030911C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F88AB44D24A21F360030911C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F88AB44E24A21F6C0030911C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB46324A234A40030911C /* Entity */,
+				F88AB46224A2349C0030911C /* UseCase */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F88AB44F24A21FE00030911C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F88AB45F24A232AC0030911C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB46624A234F20030911C /* Network */,
+				F88AB46524A234CA0030911C /* Repository */,
+				F88AB46424A234BF0030911C /* Database */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F88AB46224A2349C0030911C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		F88AB46324A234A40030911C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F88AB46424A234BF0030911C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB45724A22F330030911C /* Storable.swift */,
+				F88AB45924A22F4A0030911C /* Storage.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F88AB46524A234CA0030911C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB45B24A230580030911C /* WebRepository.swift */,
+				F88AB45D24A2320C0030911C /* DatabaseRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F88AB46624A234F20030911C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F88AB45024A220A00030911C /* NetworkService.swift */,
+				F88AB45524A22BDE0030911C /* NetworkMappert.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		FE9A4A25969A1324FE31D5A0 /* Frameworks */ = {
@@ -472,8 +626,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88AB45E24A2320C0030911C /* DatabaseRepository.swift in Sources */,
 				F88AB43D24A2127C0030911C /* AppDelegate.swift in Sources */,
+				F88AB45824A22F330030911C /* Storable.swift in Sources */,
+				F88AB45124A220A00030911C /* NetworkService.swift in Sources */,
 				F88AB43F24A2127C0030911C /* SceneDelegate.swift in Sources */,
+				F88AB45624A22BDE0030911C /* NetworkMappert.swift in Sources */,
+				F88AB45A24A22F4A0030911C /* Storage.swift in Sources */,
+				F88AB45C24A230580030911C /* WebRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
