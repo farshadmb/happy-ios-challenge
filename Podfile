@@ -11,6 +11,8 @@ target 'HappyDemoApp' do
   pod 'Moya/RxSwift'
   pod 'Realm'
   
+  pod 'PureLayout'
+  
   pod 'RxSwift'
   pod 'RxAlamofire'
   

@@ -11,7 +11,7 @@ import Foundation
 
 struct BikeStationEntity: Codable, Hashable {
     
-    let stationID: String
+    let id: String
     let name: String
     let rentalMethod: String
     let capacity: String
@@ -20,7 +20,7 @@ struct BikeStationEntity: Codable, Hashable {
     let geocodedColumn: GeocodedColumnEntity
 
     enum CodingKeys: String, CodingKey {
-        case stationID = "station_id"
+        case id = "station_id"
         case name = "name"
         case rentalMethod = "rental_method"
         case capacity = "capacity"
@@ -39,4 +39,16 @@ struct GeocodedColumnEntity: Codable, Hashable {
         case latitude = "latitude"
         case longitude = "longitude"
     }
+}
+
+extension GeocodedColumnEntity : LocationCordinate {
+   
+    var lat: Double {
+        Double(latitude) ?? 0
+    }
+    
+    var long: Double {
+        Double(longitude) ?? 0
+    }
+    
 }

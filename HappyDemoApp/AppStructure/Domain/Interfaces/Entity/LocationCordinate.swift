@@ -9,6 +9,8 @@
 import Foundation
 
 protocol LocationCordinate {
-    var lat: Double { get set }
-    var lon: Double { get set }
+    var lat: Double { get }
+    var long: Double { get }
+    
 }
+

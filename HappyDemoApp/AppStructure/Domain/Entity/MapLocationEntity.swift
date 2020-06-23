@@ -12,6 +12,6 @@ import Foundation
 struct MapLocationEntity: LocationCordinate {
     
     var lat: Double
-    var lon: Double
+    var long: Double
     
 }

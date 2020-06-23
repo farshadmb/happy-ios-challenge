@@ -41,6 +41,12 @@
 		F8C1C91624A2817A003F945A /* BikeStationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91524A2817A003F945A /* BikeStationRepository.swift */; };
 		F8C1C91824A28209003F945A /* BikeStationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91724A28209003F945A /* BikeStationTarget.swift */; };
 		F8C1C91A24A2877B003F945A /* BikeStationRepositoryTestes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91924A2877B003F945A /* BikeStationRepositoryTestes.swift */; };
+		F8C1C91C24A2904A003F945A /* StationListMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91B24A2904A003F945A /* StationListMapViewModel.swift */; };
+		F8C1C91E24A29064003F945A /* BikeStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C91D24A29064003F945A /* BikeStationViewModel.swift */; };
+		F8C1C92224A2966E003F945A /* GMUClusterMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92124A2966E003F945A /* GMUClusterMappable.swift */; };
+		F8C1C92424A29946003F945A /* GMSMapViewDelegateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92324A29946003F945A /* GMSMapViewDelegateWrapper.swift */; };
+		F8C1C92624A29ADA003F945A /* AnyGMUClusterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92524A29ADA003F945A /* AnyGMUClusterItem.swift */; };
+		F8C1C92824A2A3D7003F945A /* AnnotationIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1C92724A2A3D7003F945A /* AnnotationIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		F8C1C91524A2817A003F945A /* BikeStationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationRepository.swift; sourceTree = "<group>"; };
 		F8C1C91724A28209003F945A /* BikeStationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationTarget.swift; sourceTree = "<group>"; };
 		F8C1C91924A2877B003F945A /* BikeStationRepositoryTestes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationRepositoryTestes.swift; sourceTree = "<group>"; };
+		F8C1C91B24A2904A003F945A /* StationListMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListMapViewModel.swift; sourceTree = "<group>"; };
+		F8C1C91D24A29064003F945A /* BikeStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationViewModel.swift; sourceTree = "<group>"; };
+		F8C1C92124A2966E003F945A /* GMUClusterMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMUClusterMappable.swift; sourceTree = "<group>"; };
+		F8C1C92324A29946003F945A /* GMSMapViewDelegateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewDelegateWrapper.swift; sourceTree = "<group>"; };
+		F8C1C92524A29ADA003F945A /* AnyGMUClusterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyGMUClusterItem.swift; sourceTree = "<group>"; };
+		F8C1C92724A2A3D7003F945A /* AnnotationIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +290,7 @@
 				F88AB46924A23CBF0030911C /* StationMapView.swift */,
 				F88AB46B24A23CD30030911C /* GoogleMapAdapterView.swift */,
 				F88AB47224A24ACD0030911C /* BottomSheetView.swift */,
+				F8C1C92724A2A3D7003F945A /* AnnotationIconView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +298,8 @@
 		F88AB44924A219FB0030911C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C91B24A2904A003F945A /* StationListMapViewModel.swift */,
+				F8C1C91D24A29064003F945A /* BikeStationViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -407,6 +422,9 @@
 			children = (
 				F8C1C8FF24A25DEE003F945A /* GoogleMapViewFactory.swift */,
 				F8C1C90124A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift */,
+				F8C1C92524A29ADA003F945A /* AnyGMUClusterItem.swift */,
+				F8C1C92124A2966E003F945A /* GMUClusterMappable.swift */,
+				F8C1C92324A29946003F945A /* GMSMapViewDelegateWrapper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -708,17 +726,23 @@
 				F88AB45E24A2320C0030911C /* DatabaseRepository.swift in Sources */,
 				F8C1C90224A25F59003F945A /* GMUClusterManagerDelegateWrapper.swift in Sources */,
 				F8C1C90B24A27B27003F945A /* MapBikeStationUseCaseHandler.swift in Sources */,
+				F8C1C92824A2A3D7003F945A /* AnnotationIconView.swift in Sources */,
+				F8C1C92624A29ADA003F945A /* AnyGMUClusterItem.swift in Sources */,
+				F8C1C92224A2966E003F945A /* GMUClusterMappable.swift in Sources */,
 				F88AB43D24A2127C0030911C /* AppDelegate.swift in Sources */,
 				F8C1C90524A268C9003F945A /* MapBikeStationRepositoryInterface.swift in Sources */,
+				F8C1C91C24A2904A003F945A /* StationListMapViewModel.swift in Sources */,
 				F88AB45824A22F330030911C /* Storable.swift in Sources */,
 				F8C1C91324A27D9B003F945A /* BikeStationEntity.swift in Sources */,
 				F88AB47124A241FE0030911C /* AppRootView.swift in Sources */,
 				F8C1C91124A27C69003F945A /* LocationAddress.swift in Sources */,
 				F88AB45124A220A00030911C /* NetworkService.swift in Sources */,
 				F8C1C91624A2817A003F945A /* BikeStationRepository.swift in Sources */,
+				F8C1C91E24A29064003F945A /* BikeStationViewModel.swift in Sources */,
 				F88AB46F24A2419A0030911C /* AppConfiguration.swift in Sources */,
 				F8C1C90024A25DEE003F945A /* GoogleMapViewFactory.swift in Sources */,
 				F88AB43F24A2127C0030911C /* SceneDelegate.swift in Sources */,
+				F8C1C92424A29946003F945A /* GMSMapViewDelegateWrapper.swift in Sources */,
 				F88AB47324A24ACD0030911C /* BottomSheetView.swift in Sources */,
 				F8C1C90F24A27C35003F945A /* LocationCordinate.swift in Sources */,
 				F8C1C90724A2692B003F945A /* MapBikeStationUseCase.swift in Sources */,

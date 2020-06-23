@@ -18,7 +18,7 @@ struct MapBikeStationUseCaseHandler: MapBikeStationUseCase {
     }
     
     func fetchStationList() -> Observable<[BikeStationEntity]> {
-        return repository.fetchBikeStations(at: nil, page: 0, size: 3000)
+        return repository.fetchBikeStations(at: nil, page: 0, size: 300)
     }
     
 }

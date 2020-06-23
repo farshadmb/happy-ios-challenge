@@ -10,13 +10,16 @@ import SwiftUI
 
 struct StationMapView: View {
     
-    @State private var items: [GoogleMapAdapterView.ClusterItem] = []
+    @ObservedObject var viewModel: StationListMapViewModel
     
     private let mapView = GoogleMapAdapterView()
     
     var body: some View {
         mapView
-            .update(items: self.$items)
+            .update(items: viewModel.items.compactMap( { $0.cluster }))
+            .onAppear(perform: {
+                self.viewModel.send(event: .load)
+            })
 //            .overlay(
 //                Button(action: {
 //                    //TODO: call Mapper to center now.
@@ -36,6 +39,7 @@ struct StationMapView: View {
 
 struct StationMapView_Previews: PreviewProvider {
     static var previews: some View {
-        StationMapView()
+        StationMapView(viewModel: StationListMapViewModel(state: .idle,
+                                                          useCase: MapBikeStationUseCaseHandler(repository: DefaultBikeStationRespository.default)))
     }
 }
