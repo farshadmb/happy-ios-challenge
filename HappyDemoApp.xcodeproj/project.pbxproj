@@ -16,7 +16,6 @@
 		F88AB43F24A2127C0030911C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AB43524A2127C0030911C /* SceneDelegate.swift */; };
 		F88AB44024A2127C0030911C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43724A2127C0030911C /* Assets.xcassets */; };
 		F88AB44124A2127C0030911C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43824A2127C0030911C /* LaunchScreen.storyboard */; };
-		F88AB44224A2127C0030911C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43A24A2127C0030911C /* Info.plist */; };
 		F88AB44324A2127C0030911C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88AB43C24A2127C0030911C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -312,7 +311,6 @@
 				F88AB44324A2127C0030911C /* Preview Assets.xcassets in Resources */,
 				F88AB44024A2127C0030911C /* Assets.xcassets in Resources */,
 				F88AB44124A2127C0030911C /* LaunchScreen.storyboard in Resources */,
-				F88AB44224A2127C0030911C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
