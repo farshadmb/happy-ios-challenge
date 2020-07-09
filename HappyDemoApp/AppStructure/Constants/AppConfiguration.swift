@@ -10,7 +10,8 @@ import Foundation
 
 struct AppConfiguration {
     
-    static let GoogleAPIKey = "AIzaSyBLZQKJJVm1ISSdXQuJNwviMSGONM903RM"
+    // Change this key to a valid key registered with the demo app bundle id.
+    static let GoogleAPIKey = ""
     
     private init() {
         
