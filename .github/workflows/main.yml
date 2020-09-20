@@ -35,7 +35,9 @@ jobs:
             sudo mkdir -p /Library/Developer/CoreSimulator/Profiles/Runtimes
             ls /Applications/Xcode_11.6.app/
             ls /Applications/Xcode_11.6.0.app/
-            ls /Applications/Xcode_11.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/
-            ls /Applications/Xcode_11.6.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Runtimes/iOS.simruntime/Contents
+            cd /Applications/Xcode_11.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/
+            cd iOS.simruntime
+            cd Contents
+            cat Info.plist
             xcrun simctl list runtimes
             xcrun simctl list devicetypes
