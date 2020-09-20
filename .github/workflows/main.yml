@@ -26,7 +26,7 @@ jobs:
       runs-on: macOS-latest
       strategy:
         matrix:
-          devices: ["iPhone 8 (11.4)","iPhone SE (12.4)","iPhone X (13.6)","iPhone 11","iPad Air (11.4)","iPad Air 2 (12.4)","iPad Pro (10.5-inch) (13.6)","iPad Pro (12.9-inch)"] 
+          devices: ["iPhone 8 (11.4)"] 
       steps:
         - name: Installing iOS Simulators
           run: |
@@ -35,5 +35,7 @@ jobs:
             sudo mkdir -p /Library/Developer/CoreSimulator/Profiles/Runtimes
             ls /Applications/Xcode_11.6.app/
             ls /Applications/Xcode_11.6.0.app/
+            ls /Applications/Xcode_11.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles
+            ls /Applications/Xcode_11.6.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/
             xcrun simctl list runtimes
             xcrun simctl list devicetypes
